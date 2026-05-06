@@ -1,0 +1,18 @@
+.login-page {
+	max-width: 420px;
+	margin: 60px auto;
+	font-family: system-ui;
+}
+
+.login-form {
+	display: grid;
+	gap: 12px;
+}
+
+.login-error {
+	color: crimson;
+}
+
+.login-register-link {
+	margin-top: 12px;
+}

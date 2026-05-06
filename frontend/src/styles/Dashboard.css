@@ -1,0 +1,152 @@
+.dashboard-page {
+	max-width: 900px;
+	margin: 40px auto;
+	font-family: system-ui;
+}
+
+.dashboard-header {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	align-items: center;
+}
+
+.dashboard-title {
+	margin: 0;
+}
+
+.dashboard-welcome {
+	margin-top: 6px;
+}
+
+.dashboard-divider {
+	margin: 20px 0;
+}
+
+.dashboard-divider-secondary {
+	margin: 24px 0;
+}
+
+.dashboard-controls {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dashboard-error {
+	color: crimson;
+}
+
+.dashboard-summary-grid {
+	margin-top: 16px;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 12px;
+}
+
+.dashboard-charts-grid {
+	margin-top: 22px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.dashboard-panel,
+.dashboard-card {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 14px;
+}
+
+.dashboard-panel-title {
+	margin-top: 0;
+}
+
+.dashboard-muted,
+.dashboard-card-title {
+	opacity: 0.7;
+}
+
+.dashboard-card-title {
+	font-size: 12px;
+}
+
+.dashboard-card-value {
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 6px;
+}
+
+.dashboard-chart-wrap {
+	width: 100%;
+	height: 320px;
+}
+
+.dashboard-section-title {
+	margin-bottom: 10px;
+}
+
+.dashboard-transactions-title {
+	margin-top: 24px;
+}
+
+.dashboard-add-form {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.span-1 {
+	grid-column: span 1;
+}
+
+.span-2 {
+	grid-column: span 2;
+}
+
+.span-6 {
+	grid-column: span 6;
+}
+
+.dashboard-table-wrap {
+	overflow-x: auto;
+}
+
+.dashboard-table {
+	border-collapse: collapse;
+}
+
+.dashboard-table-head-row {
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table-row {
+	border-bottom: 1px solid #eee;
+}
+
+.dashboard-actions-cell {
+	display: flex;
+	gap: 8px;
+}
+
+@media (max-width: 900px) {
+	.dashboard-summary-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.dashboard-charts-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.dashboard-add-form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.span-1,
+	.span-2,
+	.span-6 {
+		grid-column: span 2;
+	}
+}

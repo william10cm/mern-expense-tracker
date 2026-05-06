@@ -1,0 +1,91 @@
+.categories-page {
+	max-width: 850px;
+	margin: 40px auto;
+	font-family: system-ui;
+}
+
+.categories-header {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.categories-title {
+	margin: 0;
+}
+
+.categories-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.categories-subtitle {
+	opacity: 0.8;
+}
+
+.categories-divider {
+	margin: 18px 0;
+}
+
+.categories-message {
+	color: green;
+}
+
+.categories-error {
+	color: crimson;
+}
+
+.categories-form {
+	display: grid;
+	grid-template-columns: 2fr 1fr auto;
+	gap: 10px;
+	align-items: center;
+}
+
+.categories-section-title {
+	margin-top: 28px;
+}
+
+.categories-empty {
+	opacity: 0.7;
+}
+
+.categories-table {
+	border-collapse: collapse;
+}
+
+.categories-head-row {
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.categories-body-row {
+	border-bottom: 1px solid #eee;
+}
+
+.category-color-dot-input {
+	width: 22px;
+	height: 22px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	padding: 0;
+	overflow: hidden;
+	background: transparent;
+	cursor: default;
+}
+
+.category-color-dot-input:disabled {
+	opacity: 1;
+}
+
+.category-color-dot-input::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+.category-color-dot-input::-webkit-color-swatch {
+	border: 0;
+}
+
+.category-color-dot-input::-moz-color-swatch {
+	border: 0;
+}

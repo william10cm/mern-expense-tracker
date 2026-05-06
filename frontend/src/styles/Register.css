@@ -1,0 +1,18 @@
+.register-page {
+	max-width: 420px;
+	margin: 60px auto;
+	font-family: system-ui;
+}
+
+.register-form {
+	display: grid;
+	gap: 12px;
+}
+
+.register-error {
+	color: crimson;
+}
+
+.register-login-link {
+	margin-top: 12px;
+}

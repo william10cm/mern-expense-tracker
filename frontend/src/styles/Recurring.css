@@ -1,0 +1,120 @@
+.recurring-page {
+	max-width: 950px;
+	margin: 40px auto;
+	font-family: system-ui;
+}
+
+.recurring-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+}
+
+.recurring-title {
+	margin: 0;
+}
+
+.recurring-header-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.recurring-subtitle {
+	opacity: 0.8;
+	margin-top: 10px;
+}
+
+.recurring-divider {
+	margin: 18px 0;
+}
+
+.recurring-controls {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.recurring-message {
+	color: green;
+}
+
+.recurring-error {
+	color: crimson;
+}
+
+.recurring-create-title {
+	margin-top: 22px;
+}
+
+.recurring-form {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.span-1 {
+	grid-column: span 1;
+}
+
+.span-2 {
+	grid-column: span 2;
+}
+
+.span-6 {
+	grid-column: span 6;
+}
+
+.recurring-active-label {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.recurring-rules-title {
+	margin-top: 26px;
+}
+
+.recurring-muted,
+.recurring-tip {
+	opacity: 0.7;
+}
+
+.recurring-table-wrap {
+	overflow-x: auto;
+}
+
+.recurring-table {
+	border-collapse: collapse;
+}
+
+.recurring-table-head-row {
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.recurring-table-row {
+	border-bottom: 1px solid #eee;
+}
+
+.recurring-tip {
+	margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+	.recurring-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.recurring-form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.span-1,
+	.span-2,
+	.span-6 {
+		grid-column: span 2;
+	}
+}
